@@ -1,0 +1,33 @@
+.container {
+    width: 30%;
+    margin-top: 10%;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+}
+
+.btn {
+    margin-top: 2%;
+    margin-left: 13%;
+    padding: 10px;
+    width: 30%;
+    cursor: pointer;
+}
+
+input {
+    width: 90%;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.input-group-text {
+    padding: 10px 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.fail-login {
+    margin-top: 2%;
+    color: red;
+    text-align: center;
+}

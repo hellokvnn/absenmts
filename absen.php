@@ -191,23 +191,26 @@ $i = 1;
                                         $result3 = mysqli_query($koneksi, "SELECT COUNT(keterangan) FROM tb_absen WHERE keterangan='✓'");
                                         $hasil = mysqli_fetch_array($result3);
 
-                                        echo "Karyawan yang Masuk : <strong>$hasil[0]</strong> ";
+                                        echo "<center><ul>Karyawan yang Masuk : <strong>$hasil[0]</strong></ul></center>";
                                     ?>
-                                    , 
                                     <?php
                                         $result4 = mysqli_query($koneksi, "SELECT COUNT(keterangan) FROM tb_absen WHERE keterangan='Izin'");
                                         $hasil1 = mysqli_fetch_array($result4);
 
-                                        echo "Karyawan yang Izin : <strong>$hasil1[0]</strong> ";
+                                        echo "<center><ul>Karyawan yang Izin : <strong>$hasil1[0]</strong></ul></center>";
                                     ?>
-                                    , 
                                     <?php
                                         $result5 = mysqli_query($koneksi, "SELECT COUNT(keterangan) FROM tb_absen WHERE keterangan='Sakit'");
                                         $hasil2 = mysqli_fetch_array($result5);
 
-                                        echo "Karyawan yang Sakit : <strong>$hasil2[0]</strong> ";
+                                        echo "<center><ul>Karyawan yang Sakit : <strong>$hasil2[0]</strong></ul></center>";
                                     ?>
-                                    
+                                    <?php
+                                        $result6 = mysqli_query($koneksi, "SELECT COUNT(keterangan) FROM tb_absen WHERE keterangan='Telat'");
+                                        $hasil3 = mysqli_fetch_array($result6);
+
+                                        echo "<center><ul>Karyawan yang Telat : <strong>$hasil3[0]</strong></ul></center>";
+                                    ?>
                                 </table>
                             </div>   
                         </div>    
